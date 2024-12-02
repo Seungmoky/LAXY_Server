@@ -11,7 +11,7 @@ public class ApplicationStartListener implements ApplicationListener<Application
         String port = event.getApplicationContext().getEnvironment().getProperty("server.port", "8001");
         System.out.println();
         System.out.println("URL: http://localhost:" + port);
-        System.out.println("URL: http://43.202.77.176:" + port);
+        System.out.println("URL: http://52.78.164.15:" + port);
         System.out.println();
     }
 }

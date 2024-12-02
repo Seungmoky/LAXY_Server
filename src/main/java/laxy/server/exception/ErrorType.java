@@ -57,6 +57,17 @@ public enum ErrorType {
     // 태그 관련
     TAG_COUNT_TOO_LOW("E901", "태그는 최소 1개 이상이어야 합니다."),
     TAG_COUNT_TOO_HIGH("E902", "태그는 최대 10개까지만 허용됩니다. "),
+
+    // 이미지
+    IMAGE_NOT_FOUND("E1101","해당 이미지을 찾을 수 없습니다." ),
+    IMAGE_ALREADY_USED("E1102", "이미 사용중인 이미지입니다."),
+
+    EMPTY_FILE_EXCEPTION("E1301", "이미지 파일이 비어있습니다." ),
+    IO_EXCEPTION_ON_IMAGE_UPLOAD("E1302", "이미지 업로드 중 문제가 발생하였습니다." ),
+    NO_FILE_EXTENTION("E1303", "파일의 확장자가 없습니다." ),
+    INVALID_FILE_EXTENTION("E1304", "유효한 파일 확장자가 아닙니다." ),
+    PUT_OBJECT_EXCEPTION("E1305", "이미지 업로드 실패" ),
+    IO_EXCEPTION_ON_IMAGE_DELETE("E1306", "이미지 삭제 실패" ),
     ;
     private final String code;
     private final String message;
