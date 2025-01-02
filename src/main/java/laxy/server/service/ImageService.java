@@ -32,7 +32,7 @@ public class ImageService {
 
     private final AmazonS3 amazonS3;
 
-    // TODO: 이미지 캐싱 및 썸네일 필요
+    // TODO: 이미지 캐싱 및 썸네일 필요.
     @Value("${cloud.aws.s3.bucketName}")
     private String bucketName;
 
